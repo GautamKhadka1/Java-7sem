@@ -1,6 +1,6 @@
 public class Box {
-    
-        double height;
+
+    double height;
         double width, length;
         Box(double h, double w, double l)
         {

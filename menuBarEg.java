@@ -23,7 +23,7 @@ public class menuBarEg {
         JMenuItem i2 = new JMenuItem("Chitwan", ic);
         JRadioButtonMenuItem i3 = new JRadioButtonMenuItem("Trekking");
         JRadioButtonMenuItem i4 = new JRadioButtonMenuItem("Hiking");
-        i4.setAccelerator(KeyStroke.getKeyStroke("control S"));
+        i4.setAccelerator(KeyStroke.getKeyStroke("shift S"));
         i4.addActionListener(e -> JOptionPane.showMessageDialog(j, "Hiking action triggered!"));
 
         ButtonGroup bg = new ButtonGroup();
