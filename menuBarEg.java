@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.awt.event.KeyEvent;
+
 import javax.swing.*;
 
 public class menuBarEg {
@@ -16,10 +18,14 @@ public class menuBarEg {
 
         JMenu m1 = new JMenu("Home");
         JMenu m2 = new JMenu("Packages");
+        m2.setMnemonic('P');
         JMenu i1 = new JMenu("Pokhara");
         JMenuItem i2 = new JMenuItem("Chitwan", ic);
         JRadioButtonMenuItem i3 = new JRadioButtonMenuItem("Trekking");
         JRadioButtonMenuItem i4 = new JRadioButtonMenuItem("Hiking");
+        i4.setAccelerator(KeyStroke.getKeyStroke("control S"));
+        i4.addActionListener(e -> JOptionPane.showMessageDialog(j, "Hiking action triggered!"));
+
         ButtonGroup bg = new ButtonGroup();
         bg.add(i3);
         bg.add(i4);
